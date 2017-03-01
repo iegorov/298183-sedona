@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Иван Егоров](https://up.htmlacademy.ru/adaptive/10/user/298183).
-* Наставник: `Неизвестно`.
+* Наставник: Андрей Фатюк.
 
 ---
 
