@@ -32,6 +32,27 @@
       <form action="https://echo.htmlacademy.ru/" class="review-form">
         <div class="review-form__impression">
           <legend class="review-form__legend">Ваше общее впечатление:</legend>
+          <label for="positiveImpression" class="review-form__label">Скорее положительное</label>
+          <input type="radio"
+            class="review-form__input review-form__input--radio"
+            id="positiveImpression"
+            name="impression"
+            value="positive"
+            />
+          <label for="negativeImpression" class="review-form__label">Скорее отрицательное</label>
+          <input type="radio"
+            class="review-form__input review-form__input--radio"
+            id="negativeImpression"
+            name="impression"
+            value="negative"
+            />
+          <label for="difficultImpression" class="review-form__label">Затрудняюсь ответить</label>
+          <input type="radio"
+            class="review-form__input review-form__input--radio"
+            id="difficultImpression"
+            name="impression"
+            value="difficult"
+            />
         </div>
         <div class="review-form__full-name">
           <legend class="review-form__legend">Представьтесь:</legend>
