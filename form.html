@@ -35,8 +35,8 @@
           <ul class="review-form__fields">
             <li class="review-form__field">
               <label for="positiveImpression" class="review-form__label">Скорее положительное</label>
-              <input type="radio"
-                class="review-form__input review-form__input--radio"
+              <input class="review-form__input review-form__input--radio"
+                type="radio"
                 id="positiveImpression"
                 name="impression"
                 value="positive"
@@ -45,8 +45,8 @@
             </li>
             <li class="review-form__field">
               <label for="negativeImpression" class="review-form__label">Скорее отрицательное</label>
-              <input type="radio"
-                class="review-form__input review-form__input--radio"
+              <input class="review-form__input review-form__input--radio"
+                type="radio"
                 id="negativeImpression"
                 name="impression"
                 value="negative"
@@ -54,8 +54,8 @@
             </li>
             <li class="review-form__field">
               <label for="difficultImpression" class="review-form__label">Затрудняюсь ответить</label>
-              <input type="radio"
-                class="review-form__input review-form__input--radio"
+              <input class="review-form__input review-form__input--radio"
+                type="radio"
                 id="difficultImpression"
                 name="impression"
                 value="difficult"
@@ -68,8 +68,8 @@
           <ul class="review-form__fields">
             <li class="review-form__field">
               <label for="name" class="review-form__label">имя*:</label>
-              <input type="text"
-                class="review-form__input review-form__input--text"
+              <input class="review-form__input review-form__input--text"
+                type="text"
                 id="name"
                 name="name"
                 required
@@ -77,8 +77,8 @@
             </li>
             <li class="review-form__field">
               <label for="surname" class="review-form__label">фамилия*:</label>
-              <input type="text"
-                class="review-form__input review-form__input--text"
+              <input class="review-form__input review-form__input--text"
+                type="text"
                 id="surname"
                 name="surname"
                 required
@@ -86,8 +86,8 @@
             </li>
             <li class="review-form__field">
               <label for="patronymic" class="review-form__label">отчество:</label>
-              <input type="text"
-                class="review-form__input review-form__input--text"
+              <input class="review-form__input review-form__input--text"
+                type="text"
                 id="patronymic"
                 name="patronymic"
                 />
@@ -96,6 +96,29 @@
         </div>
         <div class="review-form__contacts">
           <legent class="review-form__legend">Контактная информация:</legent>
+          <ul class="review-form__fields review-form__fields--contacts">
+            <li class="review-form__field">
+              <label for="phone" class="review-form__label">телефон*:</label>
+              <input class="review-form__input review-form__input--phone"
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{10}"
+                placeholder="Введите телефон"
+                required
+                />
+            </li>
+            <li class="review-form__field">
+              <label for="email" class="review-form__label">электронная почта*:</label>
+              <input class="review-form__input review-form__input--email"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Введите e-mail"
+                required
+                />
+            </li>
+          </ul>
         </div>
         <div class="review-form__visited-lions">
           <legent class="review-form__legend">
