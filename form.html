@@ -34,29 +34,29 @@
           <legend class="review-form__legend">Ваше общее впечатление:</legend>
           <ul class="review-form__fields">
             <li class="review-form__field">
-              <label for="positiveImpression" class="review-form__label">Скорее положительное</label>
+              <label for="positive-impression" class="review-form__label">Скорее положительное</label>
               <input class="review-form__input review-form__input--radio"
                 type="radio"
-                id="positiveImpression"
+                id="positive-impression"
                 name="impression"
                 value="positive"
                 checked
                 />
             </li>
             <li class="review-form__field">
-              <label for="negativeImpression" class="review-form__label">Скорее отрицательное</label>
+              <label for="negative-impression" class="review-form__label">Скорее отрицательное</label>
               <input class="review-form__input review-form__input--radio"
                 type="radio"
-                id="negativeImpression"
+                id="negative-impression"
                 name="impression"
                 value="negative"
                 />
             </li>
             <li class="review-form__field">
-              <label for="difficultImpression" class="review-form__label">Затрудняюсь ответить</label>
+              <label for="difficult-impression" class="review-form__label">Затрудняюсь ответить</label>
               <input class="review-form__input review-form__input--radio"
                 type="radio"
-                id="difficultImpression"
+                id="difficult-impression"
                 name="impression"
                 value="difficult"
                 />
@@ -120,11 +120,45 @@
             </li>
           </ul>
         </div>
-        <div class="review-form__visited-lions">
+        <div class="review-form__attractions">
           <legent class="review-form__legend">
             Посещенные
             достопримечательности:
           </legent>
+          <ul class="review-form__fields review-form__fields--attractions">
+            <li class="review-form__field">
+              <label for="bridge" class="review-form__label">Мост Дьявола</label>
+              <input class="review-form__input review-form__input--checkbox"
+                type="checkbox"
+                id="bridge"
+                name="bridge"
+                />
+            </li>
+            <li class="review-form__field">
+              <label for="bell-tower" class="review-form__label">Гора-Колокол</label>
+              <input class="review-form__input review-form__input--checkbox"
+                type="checkbox"
+                id="bell-tower"
+                name="bell-tower"
+                />
+            </li>
+            <li class="review-form__field">
+              <label for="park" class="review-form__label">Слайд-парк</label>
+              <input class="review-form__input review-form__input--checkbox"
+                type="checkbox"
+                id="park"
+                name="park"
+                />
+            </li>
+            <li class="review-form__field">
+              <label for="red-rocks" class="review-form__label">Красные скалы</label>
+              <input class="review-form__input review-form__input--checkbox"
+                type="checkbox"
+                id="red-rocks"
+                name="red-rocks"
+                />
+            </li>
+          </ul>
         </div>
         <div class="review-form__emotions">
           <legent class="review-form__legend">Опишите свои эмоции:</legent>
