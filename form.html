@@ -40,6 +40,7 @@
                 id="positiveImpression"
                 name="impression"
                 value="positive"
+                checked
                 />
             </li>
             <li class="review-form__field">
@@ -64,6 +65,34 @@
         </div>
         <div class="review-form__full-name">
           <legend class="review-form__legend">Представьтесь:</legend>
+          <ul class="review-form__fields">
+            <li class="review-form__field">
+              <label for="name" class="review-form__label">имя*:</label>
+              <input type="text"
+                class="review-form__input review-form__input--text"
+                id="name"
+                name="name"
+                required
+                />
+            </li>
+            <li class="review-form__field">
+              <label for="surname" class="review-form__label">фамилия*:</label>
+              <input type="text"
+                class="review-form__input review-form__input--text"
+                id="surname"
+                name="surname"
+                required
+                />
+            </li>
+            <li class="review-form__field">
+              <label for="patronymic" class="review-form__label">отчество:</label>
+              <input type="text"
+                class="review-form__input review-form__input--text"
+                id="patronymic"
+                name="patronymic"
+                />
+            </li>
+          </ul>
         </div>
         <div class="review-form__contacts">
           <legent class="review-form__legend">Контактная информация:</legent>
