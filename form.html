@@ -50,9 +50,9 @@
             <div class="fieldset__content">
               <div class="fieldset__row">
                 <!-- Name -->
-                <label class="input">
-                  <span class="input__label">Имя*:</span>
-                  <input class="input__input"
+                <label class="label">
+                  <span class="label__text">Имя*:</span>
+                  <input class="input"
                     type="text"
                     name="name"
                     required
@@ -61,9 +61,9 @@
               </div>
               <div class="fieldset__row">
                 <!-- Surname -->
-                <label class="input">
-                  <span class="input__label">Фамилия*:</span>
-                  <input class="input__input"
+                <label class="label">
+                  <span class="label__text">Фамилия*:</span>
+                  <input class="input"
                     type="text"
                     name="surname"
                     required
@@ -73,9 +73,9 @@
             </div>
             <div class="fieldset__row">
               <!-- Patronymic -->
-              <label class="input">
-                <span class="input__label">Отчество:</span>
-                <input class="input__input"
+              <label class="label">
+                <span class="label__text">Отчество:</span>
+                <input class="input"
                   type="text"
                   name="patronymic"
                 />
@@ -90,13 +90,18 @@
                 <!-- Phone -->
                 <label class="icon-input">
                   <span class="icon-input__label">Контактный телефон*:</span>
-                  <input class="icon-input__input"
+                  <input class="input"
                     type="tel"
                     name="phone"
                     pattern="[0-9]{10}"
                     placeholder="Введите телефон"
                     required
                   />
+                  <span class="icon-input__icon">
+                    <svg class="icon icon-phone">
+                      <use></use>
+                    </svg>
+                  </span>
                   <span class="icon-input__error">Ошибка, перепроверьте номер</span>
                 </label>
               </div>
@@ -104,12 +109,17 @@
                 <!-- Email -->
                 <label class="icon-input">
                   <span class="icon-input__label">Электронная почта*:</span>
-                  <input class="icon-input__input"
+                  <input class="input"
                     type="email"
                     name="email"
                     placeholder="Введите e-mail"
                     required
                   />
+                  <span class="icon-input__icon">
+                    <svg class="icon icon-email">
+                      <use></use>
+                    </svg>
+                  </span>
                 </label>
               </div>
             </div>
