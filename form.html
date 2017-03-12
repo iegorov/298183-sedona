@@ -117,36 +117,42 @@
           <!-- Impression -->
           <fieldset class="fieldset">
             <legend class="fieldset__legend">Ваше общее впечатление:</legend>
-            <ul class="review-form__fields">
-              <li class="review-form__field">
-                <label for="positive-impression" class="review-form__label">Скорее положительное</label>
-                <input class="review-form__input review-form__input--radio"
-                  type="radio"
-                  id="positive-impression"
-                  name="impression"
-                  value="positive"
-                  checked
+            <div class="fieldset__content">
+              <div class="fieldset__row">
+                <!-- Positive -->
+                <label class="radio">
+                  <span class="radio__label">Скорее положительное</span>
+                  <input class="radio__input"
+                    type="radio"
+                    name="impression"
+                    value="positive"
+                    checked
                   />
-              </li>
-              <li class="review-form__field">
-                <label for="negative-impression" class="review-form__label">Скорее отрицательное</label>
-                <input class="review-form__input review-form__input--radio"
-                  type="radio"
-                  id="negative-impression"
-                  name="impression"
-                  value="negative"
+                </label>
+              </div>
+              <div class="fieldset__row">
+                <!-- Negative -->
+                <label class="radio">
+                  <span class="radio__label">Скорее отрицательное</span>
+                  <input class="radio__input"
+                    type="radio"
+                    name="impression"
+                    value="negative"
                   />
-              </li>
-              <li class="review-form__field">
-                <label for="difficult-impression" class="review-form__label">Затрудняюсь ответить</label>
-                <input class="review-form__input review-form__input--radio"
-                  type="radio"
-                  id="difficult-impression"
-                  name="impression"
-                  value="difficult"
+                </label>
+              </div>
+              <div class="fieldset__row">
+                <!-- Difficult -->
+                <label class="radio">
+                  <span class="radio__label">Затрудняюсь ответить</span>
+                  <input class="radio__input"
+                    type="radio"
+                    name="impression"
+                    value="difficult"
                   />
-              </li>
-            </ul>
+                </label>
+              </div>
+            </div>
           </fieldset>
           <fieldset class="fieldset">
             <legent class="review-form__legend">
