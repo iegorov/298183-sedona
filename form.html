@@ -82,6 +82,37 @@
               </label>
             </div>
           </fieldset>
+          <fieldset class="fieldset">
+            <legend class="fieldset__legend">Контактная информация:</legend>
+            <div class="fieldset__content">
+              <div class="fieldset__row">
+                <!-- Phone -->
+                <label class="icon-input">
+                  <span class="icon-input__label">Контактный телефон*:</span>
+                  <input class="icon-input__input"
+                    type="tel"
+                    name="phone"
+                    pattern="[0-9]{10}"
+                    placeholder="Введите телефон"
+                    required
+                  />
+                  <span class="icon-input__error">Ошибка, перепроверьте номер</span>
+                </label>
+              </div>
+              <div class="fieldset__row">
+                <!-- Email -->
+                <label class="icon-input">
+                  <span class="icon-input__label">Электронная почта*:</span>
+                  <input class="icon-input__input"
+                    type="email"
+                    name="email"
+                    placeholder="Введите e-mail"
+                    required
+                  />
+                </label>
+              </div>
+            </div>
+          </fieldset>
           <!-- Impression -->
           <fieldset class="fieldset">
             <legend class="fieldset__legend">Ваше общее впечатление:</legend>
@@ -112,32 +143,6 @@
                   id="difficult-impression"
                   name="impression"
                   value="difficult"
-                  />
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="fieldset">
-            <legent class="review-form__legend">Контактная информация:</legent>
-            <ul class="review-form__fields review-form__fields--contacts">
-              <li class="review-form__field">
-                <label for="phone" class="review-form__label">телефон*:</label>
-                <input class="review-form__input review-form__input--phone"
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  pattern="[0-9]{10}"
-                  placeholder="Введите телефон"
-                  required
-                  />
-              </li>
-              <li class="review-form__field">
-                <label for="email" class="review-form__label">электронная почта*:</label>
-                <input class="review-form__input review-form__input--email"
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Введите e-mail"
-                  required
                   />
               </li>
             </ul>
