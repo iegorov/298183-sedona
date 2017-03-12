@@ -8,30 +8,39 @@
 </head>
 <body>
   <header class="page-header">
-      <a href="#" class="page-header__logo">
-        <img src="http://placehold.it/102x83" width="102" height="83" alt="City of Sedona" />
-      </a>
-      <nav class="main-nav">
-        <a href="" class="main-nav__toggle"></a>
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="">Главная</a></li>
-          <li class="main-nav__item"><a href="">фото и видео</a></li>
-          <li class="main-nav__item"><a href="">Форма отзыва</a></li>
-          <li class="main-nav__item"><a href="">HTML academy</a></li>
-        </ul>
-      </nav>
-      <section class="welcome welcome--compact"></section>
-    </header>
-    <main class="main-review">
-      <header class="main-review__header">
-        <h1 class="main-review__title">Оставьте свой отзыв</h1>
-        <p class="main-review__description">
-          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
-        </p>
-      </header>
-      <form action="https://echo.htmlacademy.ru/" class="review-form">
-        <div class="review-form__impression">
-          <legend class="review-form__legend">Ваше общее впечатление:</legend>
+    <a href="#" class="logo">
+      <svg class="logo__icon icon icon-sedona-logo"></svg>
+    </a>
+    <nav class="main-menu">
+      <a href="" class="main-menu__toggle"></a>
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Главная</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Фото и видео</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Форма отзыва</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">HTML academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="welcome welcome--compact"></div>
+    <div class="text-block">
+      <h1 class="main-review__title">Оставьте свой отзыв</h1>
+      <p class="main-review__description">
+        Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+      </p>
+    </div>
+    <div class="form">
+      <form action="https://echo.htmlacademy.ru/">
+        <fieldset class="fieldset">
+          <legend class="fieldset__legend">Ваше общее впечатление:</legend>
           <ul class="review-form__fields">
             <li class="review-form__field">
               <label for="positive-impression" class="review-form__label">Скорее положительное</label>
@@ -62,7 +71,7 @@
                 />
             </li>
           </ul>
-        </div>
+        </fieldset>
         <div class="review-form__full-name">
           <legend class="review-form__legend">Представьтесь:</legend>
           <ul class="review-form__fields">
@@ -171,24 +180,25 @@
           <small class="review-form__note">* — обязательные поля</small>
         </div>
       </form>
-    </main>
-    <footer>
-      <div class="hashtag">#visitsedona</div>
-      <ul class="social-links">
-        <li class="social-links__item">
-          <img src="http://placehold.it/46x48" width="46" height="48" alt="twitter" />
-        </li>
-        <li class="social-links__item">
-          <img src="http://placehold.it/46x48" width="46" height="48" alt="facebook" />
-        </li>
-        <li class="social-links__item">
-          <img src="http://placehold.it/46x48" width="46" height="48" alt="youtube" />
-        </li>
-      </ul>
-      <div class="developed-by">
-        разработано
-        <img src="http://placehold.it/37x34" width="27" height="34" alt="HTML Academy" class="developed-by__logo"></span>
-      </div>
-    </footer>
+    </div>
+  </main>
+  <footer>
+    <div class="hashtag">#visitsedona</div>
+    <ul class="social-links">
+      <li class="social-links__item">
+        <img src="http://placehold.it/46x48" width="46" height="48" alt="twitter" />
+      </li>
+      <li class="social-links__item">
+        <img src="http://placehold.it/46x48" width="46" height="48" alt="facebook" />
+      </li>
+      <li class="social-links__item">
+        <img src="http://placehold.it/46x48" width="46" height="48" alt="youtube" />
+      </li>
+    </ul>
+    <div class="developed-by">
+      разработано
+      <img src="http://placehold.it/37x34" width="27" height="34" alt="HTML Academy" class="developed-by__logo"></span>
+    </div>
+  </footer>
 </body>
 </html>

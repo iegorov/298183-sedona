@@ -8,49 +8,63 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="#" class="page-header__logo">
-        <img src="http://placehold.it/102x83" width="102" height="83" alt="City of Sedona" />
+      <a href="#" class="logo">
+        <svg class="logo__icon icon icon-sedona-logo"></svg>
       </a>
-      <nav class="main-nav">
-        <a href="" class="main-nav__toggle"></a>
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="">Главная</a></li>
-          <li class="main-nav__item"><a href="">фото и видео</a></li>
-          <li class="main-nav__item"><a href="">Форма отзыва</a></li>
-          <li class="main-nav__item"><a href="">HTML academy</a></li>
+      <nav class="main-menu">
+        <a href="" class="main-menu__toggle"></a>
+        <ul class="main-menu__list">
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Главная</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Фото и видео</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Форма отзыва</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">HTML academy</a>
+          </li>
         </ul>
       </nav>
-      <section class="welcome"></section>
     </header>
     <main class="main">
-      <section class="intro">
-        <h2 class="intro__title">
+      <section class="jumbotron">
+        <i class="icon icon-welcome"></i>
+        <i class="icon icon-sedona"></i>
+        <i class="icon icon-because"></i>
+      </section>
+      <section class="text-block">
+        <h2 class="text-block__title">
           Седона — небольшой городок в аризоне,
           заслуживающий большего!
         </h2>
-        <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+        <p class="text-block__text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
       </section>
-      <section class="main__advantage">
-        <div class="advantage advantage--blue">
-          <h2 class="advantage__title">
-            настоящий
-            городок
-          </h2>
-          <div class="advantage__number">— №1 —</div>
-          <div class="advantage__text">
-            Седона не аттракцион для туристов, там течет своя жизнь
-          </div>
+      <div class="advantage advantage--blue">
+        <h2 class="advantage__title">
+          настоящий
+          городок
+        </h2>
+        <div class="advantage__number">— №1 —</div>
+        <div class="advantage__text">
+          Седона не аттракцион для туристов, там течет своя жизнь
         </div>
-        <figure class="main__advantage-figure"></figure>
-      </section>
+        <img class="advantage__img" src="" alt="" />
+      </div>
+      <!-- Services -->
       <section class="services">
         <ul class="services__list">
-          <li class="services__item service">
-            <div class="service__icon">
-              <img src="http://placehold.it/75x72" width="75" height="72" alt="">
+          <li class="services__item">
+            <!-- Service -->
+            <div class="service">
+              <div class="service__icon">
+                <img src="http://placehold.it/75x72" width="75" height="72" alt="">
+              </div>
+              <h2 class="service__title">ЖИЛЬЕ</h2>
+              <p class="service__intro">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
             </div>
-            <b class="service__title">ЖИЛЬЕ</b>
-            <p class="service__intro">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
           </li>
           <li class="services__item service">
             <div class="service__icon">
@@ -67,7 +81,7 @@
               <img src="http://placehold.it/75x72" width="75" height="72" alt="">
             </div>
             <b class="service__title">СУВЕНИРЫ</b>
-            <p class="service__intro">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+            <p class="service__text">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
           </li>
         </ul>
       </section>
@@ -79,21 +93,23 @@
             мост дьявола
           </h2>
           <div class="advantage__number">— №2 —</div>
-          <div class="advantage__text">
+          <p class="advantage__text">
             да, по нему можно пройти! если вы осмелитесь, конечно
-          </div>
+          </p>
         </div>
       </section>
       <section class="advantages">
         <ul class="advantages__list">
-          <li class="advantage">
-            <h2 class="advantage__title">
-              небольшая
-              площадь
-            </h2>
-            <div class="advantage__number">— №3 —</div>
-            <div class="advantage__text">
-              все достопримечательности находятся очень близко
+          <li class="advantage__item">
+            <div class="advantage">
+              <h2 class="advantage__title">
+                небольшая
+                площадь
+              </h2>
+              <div class="advantage__number">— №3 —</div>
+              <div class="advantage__text">
+                все достопримечательности находятся очень близко
+              </div>
             </div>
           </li>
           <li class="advantage">
@@ -119,21 +135,25 @@
           </li>
         </ul>
       </section>
-      <section class="hotel-search">
-        <b class="hotel-search__title">заинтересовались?</b>
-        <p class="hotel-search__text">
+      <section class="text-block">
+        <h2 class="text-block__title">заинтересовались?</h2>
+        <p class="text-block__text">
           укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
-        <a href="" class="hotel-search__btn btn">найти гостиницу</a>
+        <a href="#" class="btn">найти гостиницу</a>
       </section>
-      <section class="map"></section>
+      <section class="map" id="map"></section>
     </main>
-    <footer>
-      <div class="hashtag">#visitsedona</div>
-      <ul class="social-links">
-        <li class="social-links__item">
-          <img src="http://placehold.it/46x48" width="46" height="48" alt="twitter" />
+    <footer class="page-footer">
+      <h2 class="page-footer__title">#visitsedona</h2>
+      <ul class="socials">
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <svg class="icon icon-twitter">
+              <use></use>
+            </svg>
+          </a>
         </li>
         <li class="social-links__item">
           <img src="http://placehold.it/46x48" width="46" height="48" alt="facebook" />
@@ -142,9 +162,9 @@
           <img src="http://placehold.it/46x48" width="46" height="48" alt="youtube" />
         </li>
       </ul>
-      <div class="developed-by">
+      <div class="copyright">
         разработано
-        <img src="http://placehold.it/37x34" width="27" height="34" alt="HTML Academy" class="developed-by__logo"></span>
+        <svg class="icon"></svg>
       </div>
     </footer>
   </body>
