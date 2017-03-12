@@ -32,7 +32,9 @@
     </header>
     <main class="main">
       <div class="jumbotron jumbotron--compact">
-        <svg class="icon icon-sedona-text"></svg>
+        <svg class="icon icon-sedona-text">
+          <use></use>
+        </svg>
       </div>
       <div class="text-block">
         <h2 class="text-block__title">Оставьте свой отзыв</h2>
@@ -42,6 +44,45 @@
       </div>
       <div class="form">
         <form action="https://echo.htmlacademy.ru/">
+          <!-- Full name -->
+          <fieldset class="fieldset">
+            <legend class="fieldset__legend">Представьтесь:</legend>
+            <div class="fieldset__content">
+              <div class="fieldset__row">
+                <!-- Name -->
+                <label class="input">
+                  <span class="input__label">Имя*:</span>
+                  <input class="input__input"
+                    type="text"
+                    name="name"
+                    required
+                  />
+                </label>
+              </div>
+              <div class="fieldset__row">
+                <!-- Surname -->
+                <label class="input">
+                  <span class="input__label">Фамилия*:</span>
+                  <input class="input__input"
+                    type="text"
+                    name="surname"
+                    required
+                  />
+                </label>
+              </div>
+            </div>
+            <div class="fieldset__row">
+              <!-- Patronymic -->
+              <label class="input">
+                <span class="input__label">Отчество:</span>
+                <input class="input__input"
+                  type="text"
+                  name="patronymic"
+                />
+              </label>
+            </div>
+          </fieldset>
+          <!-- Impression -->
           <fieldset class="fieldset">
             <legend class="fieldset__legend">Ваше общее впечатление:</legend>
             <ul class="review-form__fields">
@@ -75,38 +116,7 @@
               </li>
             </ul>
           </fieldset>
-          <div class="review-form__full-name">
-            <legend class="review-form__legend">Представьтесь:</legend>
-            <ul class="review-form__fields">
-              <li class="review-form__field">
-                <label for="name" class="review-form__label">имя*:</label>
-                <input class="review-form__input review-form__input--text"
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  />
-              </li>
-              <li class="review-form__field">
-                <label for="surname" class="review-form__label">фамилия*:</label>
-                <input class="review-form__input review-form__input--text"
-                  type="text"
-                  id="surname"
-                  name="surname"
-                  required
-                  />
-              </li>
-              <li class="review-form__field">
-                <label for="patronymic" class="review-form__label">отчество:</label>
-                <input class="review-form__input review-form__input--text"
-                  type="text"
-                  id="patronymic"
-                  name="patronymic"
-                  />
-              </li>
-            </ul>
-          </div>
-          <div class="review-form__contacts">
+          <fieldset class="fieldset">
             <legent class="review-form__legend">Контактная информация:</legent>
             <ul class="review-form__fields review-form__fields--contacts">
               <li class="review-form__field">
@@ -131,8 +141,8 @@
                   />
               </li>
             </ul>
-          </div>
-          <div class="review-form__attractions">
+          </fieldset>
+          <fieldset class="fieldset">
             <legent class="review-form__legend">
               Посещенные
               достопримечательности:
@@ -171,13 +181,13 @@
                   />
               </li>
             </ul>
-          </div>
-          <div class="review-form__emotions">
+          </fieldset>
+          <fieldset class="fieldset">
             <legent class="review-form__legend">Опишите свои эмоции:</legent>
             <div class="review-form__field">
               <textarea class="review-form__textarea" name="emotions" id="emotions" rows="10">Опишите подробно все свои восторги</textarea>
             </div>
-          </div>
+          </fieldset>
           <div class="review-form__buttons">
             <button class="review-form__button" type="submit">отправить отзыв</button>
             <small class="review-form__note">* — обязательные поля</small>
