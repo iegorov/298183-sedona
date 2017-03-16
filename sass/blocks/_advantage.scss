@@ -1,5 +1,22 @@
 .advantage {
+
+  &__title {
+    @include title-font();
+  }
+
+  &__number {
+    text-transform: uppercase;
+    color: $text-color-dark;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    color: $text-color-dark;
+  }
+
   &--blue {
+    text-align: center;
+    color: $text-color-light;
     background-color: #81b3d2;
   }
 }

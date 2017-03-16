@@ -1,7 +1,7 @@
 .service {
 
   &__title {
-    @include font-title();
+    @include title-font();
   }
 
   &__text {

@@ -1,7 +1,7 @@
  .text-block {
 
   &__title {
-    @include font-title();
+    @include title-font();
     text-align: center;
   }
 
