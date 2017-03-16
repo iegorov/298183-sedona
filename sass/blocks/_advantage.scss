@@ -1,17 +1,11 @@
 .advantage {
+  text-transform: uppercase;
+  text-align: center;
+  color: $text-color-dark;
 
   &__title {
     @include title-font();
-  }
-
-  &__number {
-    text-transform: uppercase;
-    color: $text-color-dark;
-  }
-
-  &__text {
-    text-transform: uppercase;
-    color: $text-color-dark;
+    color: #000;
   }
 
   &--blue {
