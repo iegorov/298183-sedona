@@ -1,0 +1,11 @@
+.service {
+
+  &__title {
+    @include font-title();
+  }
+
+  &__text {
+    color: #333;
+    text-transform: uppercase;
+  }
+}

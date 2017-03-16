@@ -1,0 +1,7 @@
+@mixin font-title {
+  font-family: $ptSansBold;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
