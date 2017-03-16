@@ -1,0 +1,8 @@
+.label {
+
+  &__text {
+    line-height: $line-height-large;
+    text-transform: uppercase;
+    color: $text-color-dark;
+  }
+}
