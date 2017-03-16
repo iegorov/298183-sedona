@@ -1,6 +1,5 @@
 @mixin title-font {
-  font-family: $pt-sans-bold;
-  font-weight: bold;
+  font-weight: $bold;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
