@@ -1,5 +1,17 @@
 .icon-input {
+
+  &__label {
+    line-height: 26px;
+    text-transform: uppercase;
+    color: $text-color-dark;
+  }
+
   &__icon {
     background-color: #e6e6e6;
+  }
+
+  &__error {
+    line-height: 26px;
+    color: $text-color-danger;
   }
 }
