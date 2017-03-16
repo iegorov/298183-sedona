@@ -1,2 +1,21 @@
 .text-block {
+
+  &__title {
+    font-family: $ptSansBold;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #000;
+  }
+
+  &__text {
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #333;
+  }
 }
