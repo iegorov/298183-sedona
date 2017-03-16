@@ -1,13 +1,13 @@
 .main-menu {
 
   &__link {
-    font-family: $ptSansBold;
+    font-family: $pt-sans-bold;
     font-weight: bold;
     font-size: 18px;
     line-height: 40px;
     text-transform: uppercase;
     text-align: center;
-    color: #fff;
+    color: $text-color-light;
     background-color: #81b3d2;
   }
 }
