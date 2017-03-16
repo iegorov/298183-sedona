@@ -1,6 +1,13 @@
 .main-menu {
 
   &__link {
+    font-family: $ptSansBold;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+    text-transform: uppercase;
+
+    color: #fff;
     background-color: #81b3d2;
   }
 }
