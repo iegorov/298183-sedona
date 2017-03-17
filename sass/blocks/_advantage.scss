@@ -1,16 +1,19 @@
 .advantage {
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  text-align: center;
-  color: $text-color-dark;
+  &__content {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $text-color-dark;
+  }
 
   &__title {
     @include title-font();
     color: #000;
   }
 
-  &--blue {
+  &--blue > &__content {
     text-align: center;
     color: $text-color-light;
     background-color: #81b3d2;

@@ -1,4 +1,5 @@
 .service {
+  padding: 20px;
 
   &__title {
     @include title-font();

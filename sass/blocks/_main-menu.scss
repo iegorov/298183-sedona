@@ -1,5 +1,10 @@
 .main-menu {
 
+  &__item {
+    padding: 20px;
+    background-color: #81b3d2;
+  }
+
   &__link {
     font-weight: $bold;
     font-size: 18px;
@@ -7,6 +12,5 @@
     text-transform: uppercase;
     text-align: center;
     color: $text-color-light;
-    background-color: #81b3d2;
   }
 }
