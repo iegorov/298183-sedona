@@ -1,10 +1,11 @@
 .advantage {
+  text-align: center;
+
   &__content {
     padding: 20px;
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
-    text-align: center;
     color: $text-color-dark;
   }
 

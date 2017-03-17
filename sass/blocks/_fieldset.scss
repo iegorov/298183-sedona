@@ -1,4 +1,5 @@
 .fieldset {
+  padding: 20px;
 
   &__legend {
     @include title-font();
