@@ -9,8 +9,10 @@
     "browser-sync": "2.18.8",
     "gulp": "3.9.1",
     "gulp-plumber": "1.1.0",
-    "gulp-postcss": "6.3.0",
-    "gulp-sass": "3.1.0"
+    "gulp-postcss": "6.2.0",
+    "gulp-sass": "3.1.0",
+    "@htmlacademy/editorconfig-cli": "0.1.x"
+
   },
   "scripts": {
     "test": "editorconfig-cli",
@@ -23,7 +25,7 @@
     "*.js",
     "js/**/*.js",
     "img/**/*.svg",
-    "sass/**/*.{css,pcss}"
+    "sass/**/*.{sass,scss}"
   ],
   "engines": {
     "node": "6.10"
