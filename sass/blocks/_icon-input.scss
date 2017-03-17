@@ -1,6 +1,7 @@
 .icon-input {
 
   &__label {
+    font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
     color: $text-color-dark;
@@ -11,6 +12,7 @@
   }
 
   &__error {
+    font-size: 14px;
     line-height: 26px;
     color: $text-color-danger;
   }
