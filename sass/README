@@ -1,11 +1,12 @@
-Папка для файлов PreCSS (набора плагинов для PostCSS).
+Папка для файлов препроцессора SASS.
 
-https://github.com/jonathantneal/precss
+http://sass-lang.com
 
 --
 
 Структура файлов:
 
-postcss/
-| - style.css
-| - [другие *.css файлы]
+
+sass/
+| - style.scss
+| - [другие *.scss файлы]
