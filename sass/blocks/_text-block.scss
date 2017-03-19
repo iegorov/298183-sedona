@@ -1,0 +1,20 @@
+.text-block {
+  padding: 20px;
+
+  &__title {
+    @include title-font();
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $text-color-dark;
+
+    &--large-line-height {
+      line-height: 26px;
+    }
+  }
+}

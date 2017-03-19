@@ -1,0 +1,14 @@
+.service {
+  padding: 20px;
+
+  &__title {
+    @include title-font();
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 21px;
+    color: #333;
+    text-transform: uppercase;
+  }
+}

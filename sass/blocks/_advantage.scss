@@ -1,0 +1,22 @@
+.advantage {
+  text-align: center;
+
+  &__content {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: $text-color-dark;
+  }
+
+  &__title {
+    @include title-font();
+    color: #000;
+  }
+
+  &--blue > &__content {
+    text-align: center;
+    color: $text-color-light;
+    background-color: #81b3d2;
+  }
+}

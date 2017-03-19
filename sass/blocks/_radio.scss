@@ -1,0 +1,7 @@
+.radio {
+
+  &__label {
+    @include title-font();
+    text-transform: none;
+  }
+}
