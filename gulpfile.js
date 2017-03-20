@@ -6,6 +6,13 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var svgstore = require('gulp-svgstore');
+var svgmin = require('gulp-svgmin');
+var dest = 'dest';
+
+gulp.task('default', function() {
+  gulp.start('style', 'icons');
+});
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
@@ -20,7 +27,17 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-gulp.task("serve", ["style"], function() {
+gulp.task("icons", function () {
+  return gulp
+    .src("icons/*.svg")
+    .pipe(svgmin())
+    .pipe(svgstore({
+      inlineSvg: false
+    }))
+    .pipe(gulp.dest("img"));
+});
+
+gulp.task("serve", ["style", "icons"], function() {
   server.init({
     server: ".",
     notify: false,
