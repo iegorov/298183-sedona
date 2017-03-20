@@ -1,13 +1,32 @@
 .main-menu__list {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
+
 .main-menu__item {
   display: flex;
   justify-content: center;
   align-content: center;
   padding: 20px;
   background-color: $brand-color;
+
+  &--separator {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    flex-basis: 200px;
+    background-color: #fff;
+
+    &--separator {
+      display: block;
+    }
+  }
 }
 
 .main-menu__link {
@@ -19,4 +38,10 @@
   text-transform: uppercase;
   text-align: center;
   color: $text-color-light;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    text-transform: 26px;
+    color: #000;
+  }
 }
