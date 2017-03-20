@@ -1,3 +1,24 @@
 .page-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
+}
+
+.page-header__logo {
+  position: absolute;
+  bottom: -38px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.page-header__toggle {
+  margin-left: auto;
+}
+
+.page-header__close-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
 }
