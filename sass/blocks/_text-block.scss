@@ -1,20 +1,29 @@
 .text-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 250px;
   padding: 20px;
+}
 
-  &__title {
-    @include title-font();
-    text-align: center;
+.text-block__title {
+  @include title-font();
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    @include title-font(21px);
   }
+}
 
-  &__text {
-    font-size: 14px;
-    line-height: 24px;
-    text-transform: uppercase;
-    text-align: center;
-    color: $text-color-dark;
+.text-block__text {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $text-color-dark;
 
-    &--large-line-height {
-      line-height: 26px;
-    }
+  &--large-line-height {
+    line-height: 26px;
   }
 }
