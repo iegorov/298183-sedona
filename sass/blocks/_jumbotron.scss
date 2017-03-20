@@ -1,4 +1,9 @@
 .jumbotron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 390px;
   padding: 20px;
   background: #e4f1f9 url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
+  background-size: cover;
 }
