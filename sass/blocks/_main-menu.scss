@@ -1,16 +1,22 @@
-.main-menu {
+.main-menu__list {
+  display: flex;
+  flex-direction: column;
+}
+.main-menu__item {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  background-color: $brand-color;
+}
 
-  &__item {
-    padding: 20px;
-    background-color: #81b3d2;
-  }
-
-  &__link {
-    font-weight: $bold;
-    font-size: 18px;
-    line-height: 40px;
-    text-transform: uppercase;
-    text-align: center;
-    color: $text-color-light;
-  }
+.main-menu__link {
+  display: inline-block;
+  width: 100%;
+  font-weight: $bold;
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $text-color-light;
 }
