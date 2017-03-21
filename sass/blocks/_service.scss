@@ -1,14 +1,18 @@
 .service {
   padding: 20px;
+}
 
-  &__title {
-    @include title-font();
-  }
+.service__title {
+  @include title-font();
 
-  &__text {
-    font-size: 14px;
-    line-height: 21px;
-    color: #333;
-    text-transform: uppercase;
+  @media (min-width: $tablet) {
+    @include title-font(21px);
   }
+}
+
+.service__text {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333;
+  text-transform: uppercase;
 }
