@@ -1,5 +1,31 @@
 .service {
+  display: flex;
   padding: 20px;
+
+  @media (min-width: $tablet) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.service__icon {
+  margin-right: 10px;
+
+  @media (min-width: $tablet) {
+    margin-right: 0;
+    margin-bottom: 30px;
+    .icon {
+      width: 75px;
+      height: 75px;
+    }
+  }
+}
+
+.service__content {
+  @media (min-width: $tablet) {
+    text-align: center;
+  }
 }
 
 .service__title {
