@@ -1,0 +1,20 @@
+.icon-house {
+  @media (min-width: $tablet) {
+    width: 75px;
+    height: 72px;
+  }
+}
+
+.icon-food {
+  @media (min-width: $tablet) {
+    width: 77px;
+    height: 68px;
+  }
+}
+
+.icon-gift {
+  @media (min-width: $tablet) {
+    width: 64px;
+    height: 75px;
+  }
+}
