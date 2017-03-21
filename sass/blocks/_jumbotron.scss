@@ -6,4 +6,15 @@
   padding: 20px;
   background: #e4f1f9 url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
   background-size: cover;
+
+  &--compact {
+    min-height: 168px;
+    background-size: initial;
+    background-position: bottom;
+
+    @media (min-width: $tablet) {
+      min-height: 300px;
+      background-size: cover;
+    }
+  }
 }
