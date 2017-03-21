@@ -1,6 +1,15 @@
 .form {
+  form {
+    display: flex;
+    flex-direction: column;
 
-  &__note {
-    display: none;
+    @media (min-width: $tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
+}
+
+.form__note {
+  display: none;
 }
