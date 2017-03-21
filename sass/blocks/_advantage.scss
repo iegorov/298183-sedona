@@ -3,10 +3,19 @@
   flex-direction: column;
   text-align: center;
 
-  &--blue > &__content {
+  &--blue &__content {
     text-align: center;
     color: $text-color-light;
     background-color: $brand-color;
+
+    @media (min-width: $tablet) {
+      width: percentage(1 / 3);
+      flex-shrink: 0;
+    }
+  }
+
+  &--blue &__title {
+    color: #fff;
   }
 
   @media (min-width: $tablet) {
@@ -24,26 +33,17 @@
   line-height: 21px;
   text-transform: uppercase;
   color: $text-color-dark;
-
-  @media (min-width: $tablet) {
-    width: percentage(1 / 3);
-    flex-shrink: 0;
-  }
 }
 
 .advantage__title {
   @include title-font();
-  color: #fff;
+  color: #000;
 }
 
 .advantage__img {
   outline: 2px dashed green;
   min-width: 320px;
   min-height: 260px;
-
-  img {
-    max-width: 100%;
-  }
 
   @media (min-width: $tablet) {
     flex-grow: 1;
