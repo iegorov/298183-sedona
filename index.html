@@ -243,13 +243,13 @@
     </div>
     <script>
       function initMap() {
-        var uluru = {lat: 34.859797, lng: -111.785526};
+        var coords = {lat: 34.859797, lng: -111.785526};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 8,
-          center: uluru
+          center: coords
         });
         var marker = new google.maps.Marker({
-          position: uluru,
+          position: coords,
           map: map,
           icon: "icons/icon-map-marker.svg"
         });
