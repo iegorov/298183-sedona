@@ -10,15 +10,14 @@
 
 .form__row {
   @media (min-width: $tablet) {
-    &:nth-child(1) {
+    &--tablet-half {
       width: 50%;
     }
-    &:nth-child(3) {
-      width: 50%;
+    &--tablet-order-1 {
       order: -1;
     }
 
-    &:nth-child(2), &:nth-child(4), &:nth-child(5) {
+    &--tablet-wide {
       width: 100%;
     }
   }
