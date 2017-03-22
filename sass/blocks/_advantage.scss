@@ -41,11 +41,9 @@
 }
 
 .advantage__img {
-  outline: 2px dashed green;
-  min-width: 320px;
-  min-height: 260px;
-
-  @media (min-width: $tablet) {
-    flex-grow: 1;
-  }
+  flex-grow: 1;
+  height: 260px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
