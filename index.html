@@ -246,7 +246,8 @@
         var coords = {lat: 34.859797, lng: -111.785526};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 8,
-          center: coords
+          center: coords,
+          scrollwheel: false
         });
         var marker = new google.maps.Marker({
           position: coords,
