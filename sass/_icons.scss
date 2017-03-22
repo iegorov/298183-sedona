@@ -18,3 +18,21 @@
     height: 75px;
   }
 }
+
+.icon-text-sedona-index {
+  @media (min-width: $tablet) {
+    width: 460px;
+    height: 350px;
+  }
+}
+
+.icon-text-sedona {
+  @media (min-width: $tablet) {
+    width: 458px;
+    height: 78px;
+  }
+   @media (min-width: $desktop) {
+    width: 461px;
+    height: 80px;
+   }
+}
