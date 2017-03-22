@@ -1,4 +1,7 @@
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 15px;
   font-weight: $bold;
   font-size: 21px;
@@ -7,4 +10,8 @@
   text-align: center;
   color: $text-color-light;
   background-color: #81b3d2;
+
+  &--icon {
+    background-color: transparent;
+  }
 }

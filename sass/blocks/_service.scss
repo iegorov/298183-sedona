@@ -1,14 +1,40 @@
 .service {
+  display: flex;
   padding: 20px;
 
-  &__title {
-    @include title-font();
+  @media (min-width: $tablet) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+}
 
-  &__text {
-    font-size: 14px;
-    line-height: 21px;
-    color: #333;
-    text-transform: uppercase;
+.service__icon {
+  margin-right: 10px;
+
+  @media (min-width: $tablet) {
+    margin-right: 0;
+    margin-bottom: 30px;
   }
+}
+
+.service__content {
+  @media (min-width: $tablet) {
+    text-align: center;
+  }
+}
+
+.service__title {
+  @include title-font();
+
+  @media (min-width: $tablet) {
+    @include title-font(21px);
+  }
+}
+
+.service__text {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333;
+  text-transform: uppercase;
 }

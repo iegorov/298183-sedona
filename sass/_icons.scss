@@ -1,0 +1,38 @@
+.icon-house {
+  @media (min-width: $tablet) {
+    width: 75px;
+    height: 72px;
+  }
+}
+
+.icon-food {
+  @media (min-width: $tablet) {
+    width: 77px;
+    height: 68px;
+  }
+}
+
+.icon-gift {
+  @media (min-width: $tablet) {
+    width: 64px;
+    height: 75px;
+  }
+}
+
+.icon-text-sedona-index {
+  @media (min-width: $tablet) {
+    width: 460px;
+    height: 350px;
+  }
+}
+
+.icon-text-sedona {
+  @media (min-width: $tablet) {
+    width: 458px;
+    height: 78px;
+  }
+   @media (min-width: $desktop) {
+    width: 461px;
+    height: 80px;
+   }
+}

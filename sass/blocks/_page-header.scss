@@ -1,3 +1,36 @@
 .page-header {
-  outline: dashed 3px magenta;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.page-header__logo {
+  position: absolute;
+  bottom: -38px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet){
+    bottom: 0;
+  }
+}
+
+.page-header__toggle {
+  margin-left: auto;
+
+  @media (min-width: $tablet){
+    display: none;
+  }
+}
+
+.page-header__close-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }

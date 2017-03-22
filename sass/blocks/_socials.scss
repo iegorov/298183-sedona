@@ -1,5 +1,24 @@
 .socials {
-  &__link {
-    background-color: #81b3d2;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.socials__item {
+  list-style-type: none;
+  width: 46px;
+  height: 48px;
+
+  &:not(:last-child) {
+    margin-right: 6px;
   }
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: $brand-color;
 }
