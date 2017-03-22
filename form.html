@@ -8,291 +8,293 @@
     <title>Отзыв</title>
   </head>
   <body>
-    <!-- Page header -->
-    <header class="page-header">
-      <div class="page-header__logo">
-        <a href="#" class="logo">
-          <svg class="logo__icon icon icon-logo-sedona" width="102" height="83">
-            <use xlink:href="img/icons.svg#logo-sedona-mobile"></use>
+    <div class="container">
+      <!-- Page header -->
+      <header class="page-header">
+        <div class="page-header__logo">
+          <a href="#" class="logo">
+            <svg class="logo__icon icon icon-logo-sedona" width="102" height="83">
+              <use xlink:href="img/icons.svg#logo-sedona-mobile"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="main-menu">
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Главная</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Фото и видео</a>
+            </li>
+            <li class="main-menu__item main-menu__item--separator"></li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Форма отзыва</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">HTML academy</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__close-menu">
+          <a href="#" class="btn btn--icon">
+            <svg class="icon icon-close" width="23" height="22">
+              <use xlink:href="img/icons.svg#icon-cross"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="page-header__toggle">
+          <a href="" class="btn btn--icon">
+            <svg class="icon icon-menu" width="23" height="21">
+              <use xlink:href="img/icons.svg#icon-menu"></use>
+            </svg>
+          </a>
+        </div>
+      </header>
+      <main class="main">
+        <div class="jumbotron jumbotron--compact">
+          <svg class="icon icon-text-sedona" width="229" height="39">
+            <use xlink:href="img/icons.svg#text-sedona"></use>
           </svg>
-        </a>
-      </div>
-      <nav class="main-menu">
-        <ul class="main-menu__list">
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Главная</a>
+        </div>
+        <div class="text-block">
+          <h2 class="text-block__title">Оставьте свой отзыв</h2>
+          <p class="text-block__text">
+            Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+          </p>
+        </div>
+        <div class="main__form">
+          <form action="https://echo.htmlacademy.ru/">
+            <div class="form">
+              <!-- Full name -->
+              <div class="form__row">
+                <fieldset class="fieldset">
+                  <legend class="fieldset__legend">Представьтесь:</legend>
+                  <div class="fieldset__content">
+                    <div class="fieldset__row">
+                      <!-- Name -->
+                      <label class="label">
+                        <span class="label__text">Имя*:</span>
+                        <input class="input"
+                          type="text"
+                          name="name"
+                          required
+                        />
+                      </label>
+                    </div>
+                    <div class="fieldset__row">
+                      <!-- Surname -->
+                      <label class="label">
+                        <span class="label__text">Фамилия*:</span>
+                        <input class="input"
+                          type="text"
+                          name="surname"
+                          required
+                        />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="fieldset__row">
+                    <!-- Patronymic -->
+                    <label class="label">
+                      <span class="label__text">Отчество:</span>
+                      <input class="input"
+                        type="text"
+                        name="patronymic"
+                      />
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+              <!-- Contacts -->
+              <div class="form__row">
+                <fieldset class="fieldset">
+                  <legend class="fieldset__legend">Контактная информация:</legend>
+                  <div class="fieldset__content">
+                    <div class="fieldset__row">
+                      <!-- Phone -->
+                      <label class="icon-input">
+                        <span class="icon-input__label">Контактный телефон*:</span>
+                        <input class="input"
+                          type="tel"
+                          name="phone"
+                          pattern="[0-9]{10}"
+                          placeholder="Введите телефон"
+                          required
+                        />
+                        <span class="icon-input__icon">
+                          <svg class="icon icon-phone" width="18" height="18">
+                            <use xlink:href="img/icons.svg#icon-phone"></use>
+                          </svg>
+                        </span>
+                        <span class="icon-input__error">Ошибка, перепроверьте номер</span>
+                      </label>
+                    </div>
+                    <div class="fieldset__row">
+                      <!-- Email -->
+                      <label class="icon-input">
+                        <span class="icon-input__label">Электронная почта*:</span>
+                        <input class="input"
+                          type="email"
+                          name="email"
+                          placeholder="Введите e-mail"
+                          required
+                        />
+                        <span class="icon-input__icon">
+                          <svg class="icon icon-mail" width="16" height="12">
+                            <use xlink:href="img/icons.svg#icon-mail"></use>
+                          </svg>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <!-- Impression -->
+              <div class="form__row">
+                <fieldset class="fieldset">
+                  <legend class="fieldset__legend">Ваше общее впечатление:</legend>
+                  <div class="fieldset__content">
+                    <div class="fieldset__row">
+                      <!-- Positive -->
+                      <label class="radio">
+                        <span class="radio__label">Скорее положительное</span>
+                        <input class="radio__input"
+                          type="radio"
+                          name="impression"
+                          value="positive"
+                          checked
+                        />
+                      </label>
+                    </div>
+                    <div class="fieldset__row">
+                      <!-- Negative -->
+                      <label class="radio">
+                        <span class="radio__label">Скорее отрицательное</span>
+                        <input class="radio__input"
+                          type="radio"
+                          name="impression"
+                          value="negative"
+                        />
+                      </label>
+                    </div>
+                    <div class="fieldset__row">
+                      <!-- Difficult -->
+                      <label class="radio">
+                        <span class="radio__label">Затрудняюсь ответить</span>
+                        <input class="radio__input"
+                          type="radio"
+                          name="impression"
+                          value="difficult"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <!-- Attractions -->
+              <div class="form__row">
+                <fieldset class="fieldset">
+                  <legend class="fieldset__legend">
+                    Посещенные
+                    достопримечательности:
+                  </legend>
+                  <div class="fieldset__row">
+                    <!-- Bridge -->
+                    <label class="checkbox">
+                      <span class="checkbox__label">Мост Дьявола</span>
+                      <input class="checkbox__input"
+                        type="checkbox"
+                        name="bridge"
+                      />
+                    </label>
+                  </div>
+                  <div class="fieldset__row">
+                    <!-- Bell-tower -->
+                    <label class="checkbox">
+                      <span class="checkbox__label">Гора-Колокол</span>
+                      <input class="checkbox__input"
+                        type="checkbox"
+                        name="bell-tower"
+                      />
+                    </label>
+                  </div>
+                  <div class="fieldset__row">
+                    <!-- Park -->
+                    <label class="checkbox">
+                      <span class="checkbox__label">Слайд-парк</span>
+                      <input class="checkbox__input"
+                        type="checkbox"
+                        name="park"
+                      />
+                    </label>
+                  </div>
+                  <div class="fieldset__row">
+                    <!-- Red rocks -->
+                    <label class="checkbox">
+                      <span class="checkbox__label">Красные скалы</span>
+                      <input class="checkbox__input"
+                        type="checkbox"
+                        name="red-rocks"
+                      />
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+              <!-- Emotions -->
+              <div class="form__row">
+                <fieldset class="fieldset">
+                  <legend class="fieldset__legend">Опишите свои эмоции:</legend>
+                  <div class="fieldset__content">
+                    <div class="fieldset__row">
+                      <textarea class="textarea" name="emotions" rows="10">Опишите подробно все свои восторги</textarea>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="form__footer">
+                <button class="btn" type="submit">отправить отзыв</button>
+                <small class="form__note">* — обязательные поля</small>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </main>
+      <!-- Page footer -->
+      <footer class="page-footer">
+        <h2 class="page-footer__title">#visitsedona</h2>
+        <ul class="socials">
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="icon icon-twitter" width="18" height="14">
+                <use xlink:href="img/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Фото и видео</a>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="icon icon-facebook" width="9" height="18">
+                <use xlink:href="img/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
           </li>
-          <li class="main-menu__item main-menu__item--separator"></li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Форма отзыва</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="#">HTML academy</a>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg class="icon icon-youtube" width="14" height="26">
+                <use xlink:href="img/icons.svg#icon-youtube"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </nav>
-      <div class="page-header__close-menu">
-        <a href="#" class="btn btn--icon">
-          <svg class="icon icon-close" width="23" height="22">
-            <use xlink:href="img/icons.svg#icon-cross"></use>
-          </svg>
-        </a>
-      </div>
-      <div class="page-header__toggle">
-        <a href="" class="btn btn--icon">
-          <svg class="icon icon-menu" width="23" height="21">
-            <use xlink:href="img/icons.svg#icon-menu"></use>
-          </svg>
-        </a>
-      </div>
-    </header>
-    <main class="main">
-      <div class="jumbotron jumbotron--compact">
-        <svg class="icon icon-text-sedona" width="229" height="39">
-          <use xlink:href="img/icons.svg#text-sedona"></use>
-        </svg>
-      </div>
-      <div class="text-block">
-        <h2 class="text-block__title">Оставьте свой отзыв</h2>
-        <p class="text-block__text">
-          Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
-        </p>
-      </div>
-      <div class="main__form">
-        <form action="https://echo.htmlacademy.ru/">
-          <div class="form">
-            <!-- Full name -->
-            <div class="form__row">
-              <fieldset class="fieldset">
-                <legend class="fieldset__legend">Представьтесь:</legend>
-                <div class="fieldset__content">
-                  <div class="fieldset__row">
-                    <!-- Name -->
-                    <label class="label">
-                      <span class="label__text">Имя*:</span>
-                      <input class="input"
-                        type="text"
-                        name="name"
-                        required
-                      />
-                    </label>
-                  </div>
-                  <div class="fieldset__row">
-                    <!-- Surname -->
-                    <label class="label">
-                      <span class="label__text">Фамилия*:</span>
-                      <input class="input"
-                        type="text"
-                        name="surname"
-                        required
-                      />
-                    </label>
-                  </div>
-                </div>
-                <div class="fieldset__row">
-                  <!-- Patronymic -->
-                  <label class="label">
-                    <span class="label__text">Отчество:</span>
-                    <input class="input"
-                      type="text"
-                      name="patronymic"
-                    />
-                  </label>
-                </div>
-              </fieldset>
-            </div>
-            <!-- Contacts -->
-            <div class="form__row">
-              <fieldset class="fieldset">
-                <legend class="fieldset__legend">Контактная информация:</legend>
-                <div class="fieldset__content">
-                  <div class="fieldset__row">
-                    <!-- Phone -->
-                    <label class="icon-input">
-                      <span class="icon-input__label">Контактный телефон*:</span>
-                      <input class="input"
-                        type="tel"
-                        name="phone"
-                        pattern="[0-9]{10}"
-                        placeholder="Введите телефон"
-                        required
-                      />
-                      <span class="icon-input__icon">
-                        <svg class="icon icon-phone" width="18" height="18">
-                          <use xlink:href="img/icons.svg#icon-phone"></use>
-                        </svg>
-                      </span>
-                      <span class="icon-input__error">Ошибка, перепроверьте номер</span>
-                    </label>
-                  </div>
-                  <div class="fieldset__row">
-                    <!-- Email -->
-                    <label class="icon-input">
-                      <span class="icon-input__label">Электронная почта*:</span>
-                      <input class="input"
-                        type="email"
-                        name="email"
-                        placeholder="Введите e-mail"
-                        required
-                      />
-                      <span class="icon-input__icon">
-                        <svg class="icon icon-mail" width="16" height="12">
-                          <use xlink:href="img/icons.svg#icon-mail"></use>
-                        </svg>
-                      </span>
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
-            </div>
-            <!-- Impression -->
-            <div class="form__row">
-              <fieldset class="fieldset">
-                <legend class="fieldset__legend">Ваше общее впечатление:</legend>
-                <div class="fieldset__content">
-                  <div class="fieldset__row">
-                    <!-- Positive -->
-                    <label class="radio">
-                      <span class="radio__label">Скорее положительное</span>
-                      <input class="radio__input"
-                        type="radio"
-                        name="impression"
-                        value="positive"
-                        checked
-                      />
-                    </label>
-                  </div>
-                  <div class="fieldset__row">
-                    <!-- Negative -->
-                    <label class="radio">
-                      <span class="radio__label">Скорее отрицательное</span>
-                      <input class="radio__input"
-                        type="radio"
-                        name="impression"
-                        value="negative"
-                      />
-                    </label>
-                  </div>
-                  <div class="fieldset__row">
-                    <!-- Difficult -->
-                    <label class="radio">
-                      <span class="radio__label">Затрудняюсь ответить</span>
-                      <input class="radio__input"
-                        type="radio"
-                        name="impression"
-                        value="difficult"
-                      />
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
-            </div>
-            <!-- Attractions -->
-            <div class="form__row">
-              <fieldset class="fieldset">
-                <legend class="fieldset__legend">
-                  Посещенные
-                  достопримечательности:
-                </legend>
-                <div class="fieldset__row">
-                  <!-- Bridge -->
-                  <label class="checkbox">
-                    <span class="checkbox__label">Мост Дьявола</span>
-                    <input class="checkbox__input"
-                      type="checkbox"
-                      name="bridge"
-                    />
-                  </label>
-                </div>
-                <div class="fieldset__row">
-                  <!-- Bell-tower -->
-                  <label class="checkbox">
-                    <span class="checkbox__label">Гора-Колокол</span>
-                    <input class="checkbox__input"
-                      type="checkbox"
-                      name="bell-tower"
-                    />
-                  </label>
-                </div>
-                <div class="fieldset__row">
-                  <!-- Park -->
-                  <label class="checkbox">
-                    <span class="checkbox__label">Слайд-парк</span>
-                    <input class="checkbox__input"
-                      type="checkbox"
-                      name="park"
-                    />
-                  </label>
-                </div>
-                <div class="fieldset__row">
-                  <!-- Red rocks -->
-                  <label class="checkbox">
-                    <span class="checkbox__label">Красные скалы</span>
-                    <input class="checkbox__input"
-                      type="checkbox"
-                      name="red-rocks"
-                    />
-                  </label>
-                </div>
-              </fieldset>
-            </div>
-            <!-- Emotions -->
-            <div class="form__row">
-              <fieldset class="fieldset">
-                <legend class="fieldset__legend">Опишите свои эмоции:</legend>
-                <div class="fieldset__content">
-                  <div class="fieldset__row">
-                    <textarea class="textarea" name="emotions" rows="10">Опишите подробно все свои восторги</textarea>
-                  </div>
-                </div>
-              </fieldset>
-            </div>
-            <div class="form__footer">
-              <button class="btn" type="submit">отправить отзыв</button>
-              <small class="form__note">* — обязательные поля</small>
-            </div>
-
-          </div>
-        </form>
-      </div>
-    </main>
-    <!-- Page footer -->
-    <footer class="page-footer">
-      <h2 class="page-footer__title">#visitsedona</h2>
-      <ul class="socials">
-        <li class="socials__item">
-          <a href="#" class="socials__link">
-            <svg class="icon icon-twitter" width="18" height="14">
-              <use xlink:href="img/icons.svg#icon-twitter"></use>
+        <div class="copyright">
+          <span class="copyright__text">разработано</span>
+          <span class="copyright__icon">
+            <svg class="icon icon-htmlacademy" width="27" height="34">
+              <use  xlink:href="img/icons.svg#htmlacademy"></use>
             </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="#" class="socials__link">
-            <svg class="icon icon-facebook" width="9" height="18">
-              <use xlink:href="img/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="#" class="socials__link">
-            <svg class="icon icon-youtube" width="14" height="26">
-              <use xlink:href="img/icons.svg#icon-youtube"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <div class="copyright">
-        <span class="copyright__text">разработано</span>
-        <span class="copyright__icon">
-          <svg class="icon icon-htmlacademy" width="27" height="34">
-            <use  xlink:href="img/icons.svg#htmlacademy"></use>
-          </svg>
-        </span>
-      </div>
-    </footer>
+          </span>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
