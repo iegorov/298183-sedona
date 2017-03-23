@@ -9,6 +9,8 @@
 }
 
 .form__row {
+  background-color: #fff;
+
   @media (min-width: $tablet) {
     &--tablet-half {
       width: 50%;
