@@ -1,8 +1,8 @@
 .form {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0;
+  padding-right: 0;
   background-color: #fff;
 
   @media (min-width: $tablet) {
@@ -19,9 +19,13 @@
 }
 
 .form__row {
+  padding-left: 20px;
+  padding-right: 20px;
   border-top: 1px solid #e5e5e5;
 
   @media (min-width: $tablet) {
+    padding-left: 0;
+    padding-right: 0;
     border-top: none;
 
     &--tablet-half {

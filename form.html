@@ -149,41 +149,42 @@
             <!-- Impression -->
             <div class="form__row  form__row--tablet-half  form__row--tablet-order-1">
               <fieldset class="fieldset">
-                <legend class="fieldset__legend">Ваше общее впечатление:</legend>
-                <div class="fieldset__content">
-                  <div class="fieldset__row">
-                    <!-- Positive -->
-                    <label class="radio">
-                      <span class="radio__label">Скорее положительное</span>
-                      <input class="radio__input"
-                        type="radio"
-                        name="impression"
-                        value="positive"
-                        checked
-                      />
-                    </label>
+                <legend class="fieldset__legend"><nobr>Ваше общее впечатление:</nobr></legend>
+                <div class="fieldset__row">
+                  <!-- Positive -->
+                  <div class="radio">
+                    <input class="radio__input"
+                      id="impression-positive"
+                      type="radio"
+                      name="impression"
+                      value="positive"
+                      checked
+                    />
+                    <label for="impression-positive" class="radio__label">Скорее положительное</label>
                   </div>
-                  <div class="fieldset__row">
-                    <!-- Negative -->
-                    <label class="radio">
-                      <span class="radio__label">Скорее отрицательное</span>
-                      <input class="radio__input"
-                        type="radio"
-                        name="impression"
-                        value="negative"
-                      />
-                    </label>
+                </div>
+                <div class="fieldset__row">
+                  <!-- Negative -->
+                  <div class="radio">
+                    <input class="radio__input"
+                      id="impression-negative"
+                      type="radio"
+                      name="impression"
+                      value="negative"
+                    />
+                    <label for="impression-negative" class="radio__label">Скорее отрицательное</label>
                   </div>
-                  <div class="fieldset__row">
-                    <!-- Difficult -->
-                    <label class="radio">
-                      <span class="radio__label">Затрудняюсь ответить</span>
-                      <input class="radio__input"
-                        type="radio"
-                        name="impression"
-                        value="difficult"
-                      />
-                    </label>
+                </div>
+                <div class="fieldset__row">
+                  <!-- Difficult -->
+                  <div class="radio">
+                    <input class="radio__input"
+                      id="impression-difficult"
+                      type="radio"
+                      name="impression"
+                      value="difficult"
+                    />
+                    <label for="impression-difficult" class="radio__label">Затрудняюсь ответить</label>
                   </div>
                 </div>
               </fieldset>
