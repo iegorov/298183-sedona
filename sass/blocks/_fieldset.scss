@@ -27,6 +27,12 @@
     transform: none;
     @include title-font(21px);
   }
+
+  @media (min-width: $desktop) {
+    &--radio {
+      left: 78px;
+    }
+  }
 }
 
 .fieldset__row {
@@ -37,6 +43,14 @@
   &--radio {
     &:not(:last-child) {
       margin-bottom: 12px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    &--radio {
+      &:not(:last-child) {
+        margin-bottom: 22px;
+      }
     }
   }
 }
