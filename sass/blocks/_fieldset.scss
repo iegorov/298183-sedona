@@ -15,22 +15,22 @@
 .fieldset__legend {
   position: absolute;
   top: 18px;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
   margin: 0 auto;
+  text-align: center;
   @include title-font();
   text-align: center;
 
   @media (min-width: $tablet) {
     top: -3px;
     left: 0;
-    transform: none;
+    text-align: left;
     @include title-font(21px);
   }
 
   @media (min-width: $desktop) {
     &--radio {
-      left: 78px;
+      padding-left: 78px;
     }
   }
 }
