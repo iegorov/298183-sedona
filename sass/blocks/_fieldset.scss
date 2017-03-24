@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   padding-top: 66px;
-  padding-bottom: 25px;
+  padding-bottom: 27px;
   border: none;
 
   @media (min-width: $tablet) {
@@ -31,5 +31,11 @@
 .fieldset__row {
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  &--radio {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
   }
 }
