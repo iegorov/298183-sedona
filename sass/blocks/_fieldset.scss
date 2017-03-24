@@ -1,15 +1,12 @@
 .fieldset {
   position: relative;
   margin: 0;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0;
   padding-top: 66px;
   padding-bottom: 25px;
   border: none;
 
   @media (min-width: $tablet) {
-    padding-left: 60px;
-    padding-right: 60px;
     padding-bottom: 0;
   }
 }
@@ -25,7 +22,7 @@
 
   @media (min-width: $tablet) {
     top: -3px;
-    left: 60px;
+    left: 0;
     transform: none;
     @include title-font(21px);
   }
