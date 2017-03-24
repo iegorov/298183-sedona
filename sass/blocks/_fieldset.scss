@@ -1,8 +1,38 @@
 .fieldset {
-  padding: 20px;
+  position: relative;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 66px;
+  padding-bottom: 25px;
+  border: none;
 
-  &__legend {
-    @include title-font();
-    text-align: center;
+  @media (min-width: $tablet) {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 0;
+  }
+}
+
+.fieldset__legend {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  @include title-font();
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    top: -3px;
+    left: 60px;
+    transform: none;
+    @include title-font(21px);
+  }
+}
+
+.fieldset__row {
+  &:not(:last-child) {
+    margin-bottom: 20px;
   }
 }

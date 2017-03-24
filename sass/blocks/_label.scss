@@ -1,9 +1,13 @@
 .label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  &__text {
-    font-size: 14px;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: $text-color-dark;
-  }
+.label__text {
+  margin-right: 14px;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $text-color-dark;
 }
