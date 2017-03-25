@@ -9,6 +9,10 @@
   @media (min-width: $tablet) {
     padding-top: 79px;
     padding-bottom: 0;
+
+    &--contacts {
+      padding-top: 36px;
+    }
   }
 }
 
@@ -26,6 +30,18 @@
     left: 0;
     text-align: left;
     @include title-font(21px);
+
+    &--decorative {
+      top: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: auto;
+      padding-left: 60px;
+      padding-right: 60px;
+      text-align: center;
+      white-space: nowrap;
+      background-color: #fff;
+    }
   }
 
   @media (min-width: $desktop) {

@@ -1,3 +1,17 @@
+.icon-input {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .input-group {
+      width: 100%;
+    }
+  }
+}
+
 .icon-input__label {
   display: inline-block;
   margin-left: 24px;
@@ -6,6 +20,10 @@
   line-height: 26px;
   text-transform: uppercase;
   color: $text-color-dark;
+
+  @media (min-width: $tablet) {
+    order: -2;
+  }
 }
 
 .icon-input__icon {
@@ -20,4 +38,12 @@
   font-size: 14px;
   line-height: 26px;
   color: $text-color-danger;
+
+  @media (min-width: $tablet) {
+    order: -1;
+    flex-grow: 1;
+    margin-top: 0;
+    margin-bottom: 8px;
+    text-align: right;
+  }
 }
