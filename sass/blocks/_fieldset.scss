@@ -86,6 +86,11 @@
 
   &--attractions {
     padding-top: 20px;
+
+    @media (min-width: $tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 }
 
