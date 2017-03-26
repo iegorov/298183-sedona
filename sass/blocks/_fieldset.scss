@@ -9,9 +9,13 @@
   &--contacts {
     padding-bottom: 0;
 
-    .fieldset__row {
-      &:not(:last-child) {
-        margin-bottom: 10px;
+    .fieldset__row:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: $tablet) {
+      .fieldset__row:not(:last-child) {
+        margin-bottom: 22px;
       }
     }
   }

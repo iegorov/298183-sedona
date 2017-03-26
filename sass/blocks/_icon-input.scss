@@ -7,6 +7,7 @@
   @media (min-width: $tablet) {
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 0;
 
     .input-group {
       width: 100%;
@@ -47,7 +48,8 @@
   color: $text-color-danger;
 
   @media (min-width: $tablet) {
-    margin-top: 0;
+    top: 0;
+    right: 0;
     margin-bottom: 8px;
     text-align: right;
   }
