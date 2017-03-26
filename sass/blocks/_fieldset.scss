@@ -6,6 +6,16 @@
   padding-bottom: 27px;
   border: none;
 
+  &--contacts {
+    padding-bottom: 0;
+
+    .fieldset__row {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
   @media (min-width: $tablet) {
     padding-top: 79px;
     padding-bottom: 0;
@@ -51,6 +61,17 @@
   }
 }
 
+.fieldset__content {
+  display: flex;
+  flex-direction: column;
+
+  &--contacts {
+    @media (min-width: $desktop) {
+      flex-direction: row;
+    }
+  }
+}
+
 .fieldset__row {
   &:not(:last-child) {
     margin-bottom: 20px;
@@ -67,6 +88,12 @@
       &:not(:last-child) {
         margin-bottom: 22px;
       }
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &--desktop-half {
+      width: 45%;
     }
   }
 }

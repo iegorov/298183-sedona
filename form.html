@@ -106,11 +106,11 @@
             <div class="form__row  form__row--tablet-wide">
               <fieldset class="fieldset  fieldset--contacts">
                 <legend class="fieldset__legend  fieldset__legend--decorative">Контактная информация:</legend>
-                <div class="fieldset__content">
-                  <div class="fieldset__row">
+                <div class="fieldset__content  fieldset__content--contacts">
+                  <div class="fieldset__row  fieldset__row--desktop-half">
                     <!-- Phone -->
                     <label class="icon-input">
-                      <span class="icon-input__label">Контактный телефон*:</span>
+                      <span class="icon-input__label"><span class="hidden-desktop">Контактный </span>телефон*:</span>
                       <div class="input-group">
                         <input class="input"
                           type="tel"
@@ -128,7 +128,7 @@
                       <span class="icon-input__error">Ошибка, перепроверьте номер</span>
                     </label>
                   </div>
-                  <div class="fieldset__row">
+                  <div class="fieldset__row  fieldset__row--desktop-half">
                     <!-- Email -->
                     <label class="icon-input">
                       <span class="icon-input__label">Электронная почта*:</span>
@@ -145,6 +145,7 @@
                           </svg>
                         </span>
                       </div>
+                      <span class="icon-input__error"></span>
                     </label>
                   </div>
                 </div>
