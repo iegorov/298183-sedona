@@ -1,4 +1,7 @@
 .textarea {
+  width: 100%;
+  border: none;
+  padding: 20px;
   @include title-font();
   text-transform: none;
   background-color: #f2f2f2;
