@@ -16,7 +16,12 @@
 
   @media (min-width: $desktop) {
     flex-wrap: nowrap;
+    align-items: center;
     padding-top: 30px;
+
+    .input-group {
+      width: 316px;
+    }
   }
 }
 
@@ -31,6 +36,12 @@
 
   @media (min-width: $tablet) {
     order: -1;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    margin-right: 17px;
+    white-space: nowrap;
   }
 }
 
@@ -50,11 +61,14 @@
   @media (min-width: $tablet) {
     top: 0;
     right: 0;
+    bottom: initial;
     margin-bottom: 8px;
     text-align: right;
   }
 
   @media (min-width: $desktop) {
-    position: absolute;
+    left: 105px;
+    right: initial;
+    margin-bottom: 10px;
   }
 }
