@@ -33,6 +33,12 @@
       }
     }
   }
+
+  &--emotions {
+    @media (min-width: $tablet) {
+      padding-top: 71px;
+    }
+  }
 }
 
 .fieldset__legend {
