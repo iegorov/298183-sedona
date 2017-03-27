@@ -25,6 +25,11 @@
       margin-bottom: 0;
     }
   }
+
+  @media (min-width: $desktop) {
+    padding-left: 130px;
+    padding-right: 44px;
+  }
 }
 
 .page-footer__title {
