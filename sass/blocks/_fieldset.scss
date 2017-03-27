@@ -24,10 +24,13 @@
   }
 
   &--attractions {
-    padding-top: 50px;
+    @media (min-width: $desktop) {
 
-    .fieldset__legend--decorative {
-      top: -25px;
+      padding-top: 50px;
+
+      .fieldset__legend--decorative {
+        top: -25px;
+      }
     }
   }
 }
@@ -107,6 +110,19 @@
       .fieldset__group {
         margin-bottom: 0;
       }
+
+      .fieldset__row:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media (min-width: $desktop) {
+      justify-content: space-between;
+
+      .fieldset__group {
+        width: 46%;
+        justify-content: space-between;
+      }
     }
   }
 }
@@ -134,4 +150,8 @@
 .fieldset__group {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+  }
 }
