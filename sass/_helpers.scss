@@ -2,12 +2,18 @@
   display: none;
 }
 
-@media (min-width: $desktop) {
-  .hidden-desktop {
+@media (min-width: $tablet) {
+  .hidden-tablet {
     display: none;
   }
 
   .visible-tablet-inline {
     display: inline-block;
+  }
+}
+
+@media (min-width: $desktop) {
+  .hidden-desktop {
+    display: none;
   }
 }

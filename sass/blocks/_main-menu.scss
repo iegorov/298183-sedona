@@ -1,3 +1,8 @@
+.main-menu {
+  &--nojs {
+    display: block;
+  }
+}
 .main-menu__list {
   display: flex;
   flex-direction: column;
@@ -15,11 +20,35 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  padding: 20px;
+  padding: 8px;
   background-color: $brand-color;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    .main-menu__link {
+      color: #88b6d1;
+    }
+  }
 
   &--separator {
     display: none;
+  }
+
+  &:first-child {
+    border-bottom: 1px solid #678fa8;
+  }
+
+  &:not(:first-child) {
+    border-top: 1px solid #9ac2db;
+    border-bottom: 1px solid #678fa8;
+  }
+
+  &:last-child {
+    border-bottom: none;
   }
 
   @media (min-width: $tablet) {
