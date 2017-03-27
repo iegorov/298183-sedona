@@ -21,4 +21,22 @@
   width: 100%;
   height: 100%;
   background-color: $brand-color;
+
+  .icon {
+    fill: #fff;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    .icon {
+      fill: #88b6d1;
+    }
+  }
 }
+
+

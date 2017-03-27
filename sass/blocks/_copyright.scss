@@ -9,3 +9,21 @@
   line-height: 26px;
   text-transform: uppercase;
 }
+
+.copyright__link {
+  .icon {
+    fill: #000;
+  }
+
+  &:hover {
+    .icon {
+      fill: $brand-color;
+    }
+  }
+
+  &:active {
+    .icon {
+      fill: #b2b2b2;
+    }
+  }
+}
