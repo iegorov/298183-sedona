@@ -85,4 +85,12 @@
       width: 50%;
     }
   }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }

@@ -27,8 +27,13 @@
   }
 
   @media (min-width: $desktop) {
-    padding-left: 130px;
-    padding-right: 44px;
+    padding-left: 120px;
+    padding-right: 120px;
+
+    &--index {
+      padding-left: 130px;
+      padding-right: 44px;
+    }
   }
 }
 
