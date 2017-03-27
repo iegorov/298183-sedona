@@ -1,5 +1,13 @@
+.hidden-mobile {
+  display: none;
+}
+
 @media (min-width: $desktop) {
   .hidden-desktop {
     display: none;
+  }
+
+  .visible-tablet-inline {
+    display: inline-block;
   }
 }

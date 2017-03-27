@@ -198,54 +198,58 @@
             </div>
             <!-- Attractions -->
             <div class="form__row  form__row--tablet-wide">
-              <fieldset class="fieldset">
+              <fieldset class="fieldset  fieldset--attractions">
                 <legend class="fieldset__legend  fieldset__legend--decorative">
-                  Посещенные
+                  Посещенные<span class=".hidden-mobile .visible-tablet-inline"><br></span>
                   достопримечательности:
                 </legend>
                 <div class="fieldset__content  fieldset__content--attractions">
-                  <div class="fieldset__row">
-                    <!-- Bridge -->
-                    <div class="checkbox">
-                      <input class="checkbox__input"
-                        id="attractions-bridge"
-                        type="checkbox"
-                        name="bridge"
-                      />
-                      <label for="attractions-bridge" class="checkbox__label">Мост Дьявола</label>
+                  <div class="fieldset__group">
+                    <div class="fieldset__row">
+                      <!-- Bridge -->
+                      <div class="checkbox">
+                        <input class="checkbox__input"
+                          id="attractions-bridge"
+                          type="checkbox"
+                          name="bridge"
+                        />
+                        <label for="attractions-bridge" class="checkbox__label">Мост Дьявола</label>
+                      </div>
+                    </div>
+                    <div class="fieldset__row">
+                      <!-- Park -->
+                      <div class="checkbox">
+                        <input class="checkbox__input"
+                          id="attractions-park"
+                          type="checkbox"
+                          name="park"
+                        />
+                        <label for="attractions-park" class="checkbox__label">Слайд-парк</label>
+                      </div>
                     </div>
                   </div>
-                  <div class="fieldset__row">
-                    <!-- Bell-tower -->
-                    <div class="checkbox">
-                      <input class="checkbox__input"
-                        id="attractions-bell-tower"
-                        type="checkbox"
-                        name="bell-tower"
-                      />
-                      <label for="attractions-bell-tower" class="checkbox__label">Гора-Колокол</label>
+                  <div class="fieldset__group">
+                    <div class="fieldset__row">
+                      <!-- Bell-tower -->
+                      <div class="checkbox">
+                        <input class="checkbox__input"
+                          id="attractions-bell-tower"
+                          type="checkbox"
+                          name="bell-tower"
+                        />
+                        <label for="attractions-bell-tower" class="checkbox__label">Гора-Колокол</label>
+                      </div>
                     </div>
-                  </div>
-                  <div class="fieldset__row">
-                    <!-- Park -->
-                    <div class="checkbox">
-                      <input class="checkbox__input"
-                        id="attractions-park"
-                        type="checkbox"
-                        name="park"
-                      />
-                      <label for="attractions-park" class="checkbox__label">Слайд-парк</label>
-                    </div>
-                  </div>
-                  <div class="fieldset__row">
-                    <!-- Red rocks -->
-                    <div class="checkbox">
-                      <input class="checkbox__input"
-                        id="attractions-red-rocks"
-                        type="checkbox"
-                        name="red-rocks"
-                      />
-                      <label for="attractions-red-rocks" class="checkbox__label">Красные скалы</label>
+                    <div class="fieldset__row">
+                      <!-- Red rocks -->
+                      <div class="checkbox">
+                        <input class="checkbox__input"
+                          id="attractions-red-rocks"
+                          type="checkbox"
+                          name="red-rocks"
+                        />
+                        <label for="attractions-red-rocks" class="checkbox__label">Красные скалы</label>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -254,7 +258,7 @@
             <!-- Emotions -->
             <div class="form__row  form__row--tablet-wide">
               <fieldset class="fieldset">
-                <legend class="fieldset__legend">Опишите свои эмоции:</legend>
+                <legend class="fieldset__legend fieldset__legend--decorative">Опишите свои эмоции:</legend>
                 <div class="fieldset__content">
                   <div class="fieldset__row">
                     <textarea class="textarea" name="emotions" rows="5">Опишите подробно все свои восторги</textarea>
