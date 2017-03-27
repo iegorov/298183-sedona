@@ -98,7 +98,7 @@
   &--attractions {
     padding-top: 22px;
 
-    .fieldset__group, .fieldset__row:not(:last-child) {
+    .fieldset__group:not(:last-child), .fieldset__row:not(:last-child) {
       margin-bottom: 24px;
     }
 
