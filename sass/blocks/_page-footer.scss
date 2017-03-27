@@ -2,8 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  padding-top: 55px;
+  padding-bottom: 20px;
+  padding-top: 35px;
+  padding-left: 60px;
+  padding-right: 60px;
   background-color: #fff;
 
   .socials {
@@ -16,7 +18,12 @@
 
   @media (min-width: $tablet) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-bottom: 35px;
+
+    .socials {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -27,4 +34,8 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
 }
