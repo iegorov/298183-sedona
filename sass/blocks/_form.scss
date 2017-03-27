@@ -57,12 +57,32 @@
 
 .form__note {
   display: none;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $text-color-dark;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
 }
 
 .form__footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
 
   @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
     padding-left: 0;
+    padding-right: 0;
+
+    .btn {
+      width: 50%;
+    }
   }
 }
