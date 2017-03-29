@@ -41,6 +41,14 @@
     fill: #fff;
   }
 
+  &--nojs {
+    display: none;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
   @media (min-width: $tablet) {
     display: none;
   }

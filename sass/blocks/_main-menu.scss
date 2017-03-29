@@ -1,8 +1,13 @@
 .main-menu {
+  &--closed {
+    display: none;
+  }
+
   &--nojs {
     display: block;
   }
 }
+
 .main-menu__list {
   display: flex;
   flex-direction: column;
