@@ -6,6 +6,10 @@
   &--nojs {
     display: block;
   }
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
 }
 
 .main-menu__list {
@@ -34,9 +38,6 @@
 
   &:active {
     background-color: #5496bd;
-    .main-menu__link {
-      color: #88b6d1;
-    }
   }
 
   &--separator {
@@ -63,6 +64,23 @@
     &--separator {
       display: block;
     }
+
+    &:first-child {
+      border-bottom: none;
+    }
+
+    &:not(:first-child) {
+      border-top: none;
+      border-bottom: none;
+    }
+
+    &:hover {
+      background-color: #fff;
+    }
+
+    &:active {
+      background-color: #fff;
+    }
   }
 }
 
@@ -76,9 +94,33 @@
   text-align: center;
   color: $text-color-light;
 
+  &:active {
+    color: #88b6d1;
+  }
+
   @media (min-width: $tablet) {
     font-size: 14px;
     text-transform: 26px;
-    color: #000;
+    color: #444444;
+
+    &:not([href]) {
+      color: #766357;
+    }
+
+    &:not([href]):hover {
+      color: #604e43;
+    }
+
+    &:not([href]):active {
+      color: #d6d0cc;
+    }
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: #b2b2b2;
+    }
   }
 }
